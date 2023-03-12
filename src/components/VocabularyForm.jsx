@@ -38,7 +38,7 @@ const VocabularyForm = (props) => {
     <>
       {showMessage && <FlashMessage message="Added new word" type="success" />}
       <br />
-      <div className="w-full p-4 text-center bg-white border border-gray-200 rounded-lg shadow sm:p-8 flex flex-col items-center justify-center">
+      <div className="w-full p-4 m-1 text-center bg-white border border-gray-200 rounded-lg shadow sm:p-8 flex flex-col items-center justify-center">
         <form className="w-full max-w-lg" onSubmit={translateHandler}>
           <div className="flex flex-wrap -mx-3 mb-2">
             <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">

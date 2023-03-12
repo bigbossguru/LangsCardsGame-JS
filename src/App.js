@@ -3,9 +3,9 @@ import About from "./pages/About";
 import HomePage from "./pages/HomePage";
 import MyVocabulary from "./pages/MyVocabulary";
 import Profile from "./pages/Profile";
-import Navbar from "./components/Navbar";
 import CardsProvider from "./context/CardsContext";
 import MyGame from "./pages/MyGame";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (

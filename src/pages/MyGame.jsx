@@ -23,13 +23,21 @@ const MyGame = () => {
               </h1>
             </div>
           </div>
-          <div className="grid gap-2 lg:grid-cols-4">
+          <div className="grid gap-2 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
             <CardsUI
               key="345-4353"
               card={{
                 id: "345-4353",
-                sourceWord: "Test",
-                targetWord: "Testik",
+                sourceWord: "Hello",
+                targetWord: "Ahoj",
+              }}
+            />
+            <CardsUI
+              key="345-4352"
+              card={{
+                id: "345-4352",
+                sourceWord: "World",
+                targetWord: "Svet",
               }}
             />
             {cardsInfo.map((card) => (

@@ -7,7 +7,7 @@ const CardsUI = (props) => {
   return (
     <ReactCardFlip isFlipped={isFlip} flipDirection="vertical">
       <div
-        className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow items-center justify-center text-center"
+        className="m-1 p-6 bg-white border border-gray-200 rounded-lg shadow items-center justify-center text-center"
         key={props.card.id}
       >
         <h5
@@ -25,7 +25,7 @@ const CardsUI = (props) => {
         </button>
       </div>
       <div
-        className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow items-center justify-center text-center"
+        className="m-1 p-6 bg-white border border-gray-200 rounded-lg shadow items-center justify-center text-center"
         key={props.card.id}
       >
         <h5
