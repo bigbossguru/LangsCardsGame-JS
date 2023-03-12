@@ -7,11 +7,11 @@ const CardsUI = (props) => {
   return (
     <ReactCardFlip isFlipped={isFlip} flipDirection="vertical">
       <div
-        className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 items-center justify-center text-center"
+        className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow items-center justify-center text-center"
         key={props.card.id}
       >
         <h5
-          className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+          className="mb-2 text-2xl font-bold tracking-tight text-gray-900"
           key={props.card.id}
         >
           {props.card.targetWord}
@@ -25,11 +25,11 @@ const CardsUI = (props) => {
         </button>
       </div>
       <div
-        className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 items-center justify-center text-center"
+        className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow items-center justify-center text-center"
         key={props.card.id}
       >
         <h5
-          className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+          className="mb-2 text-2xl font-bold tracking-tight text-gray-900"
           key={props.card.id}
         >
           {props.card.sourceWord}

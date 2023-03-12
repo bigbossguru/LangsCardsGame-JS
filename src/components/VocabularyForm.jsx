@@ -38,7 +38,7 @@ const VocabularyForm = (props) => {
     <>
       {showMessage && <FlashMessage message="Added new word" type="success" />}
       <br />
-      <div className="w-full p-4 text-center bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center justify-center">
+      <div className="w-full p-4 text-center bg-white border border-gray-200 rounded-lg shadow sm:p-8 flex flex-col items-center justify-center">
         <form className="w-full max-w-lg" onSubmit={translateHandler}>
           <div className="flex flex-wrap -mx-3 mb-2">
             <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
@@ -147,7 +147,7 @@ const VocabularyForm = (props) => {
             {!loading ? (
               <button
                 type="submit"
-                className="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                className="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
               >
                 Translate
               </button>
@@ -155,12 +155,12 @@ const VocabularyForm = (props) => {
               <button
                 disabled
                 type="button"
-                className="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                className="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200"
               >
                 <svg
                   aria-hidden="true"
                   role="status"
-                  className="inline w-4 h-4 mr-3 text-gray-200 animate-spin dark:text-gray-600"
+                  className="inline w-4 h-4 mr-3 text-gray-200 animate-spin"
                   viewBox="0 0 100 101"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -179,7 +179,7 @@ const VocabularyForm = (props) => {
             )}
             <button
               type="button"
-              className="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+              className="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200"
               onClick={addWordHandler}
             >
               Add
