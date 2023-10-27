@@ -1,14 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('Docker Build') {
-            steps {
-                script {
-                    sh 'docker build -t langcardgame-image .'
-                }
-            }
-        }
-        stage('Docker Stop and Clean') {
+        stage('Docker Stop and Clean Previous') {
             steps {
                 script {
                     try {
@@ -17,6 +10,13 @@ pipeline {
                     } catch (Exception e) {
                         echo 'Container does not exist'
                     }
+                }
+            }
+        }
+        stage('Docker Build') {
+            steps {
+                script {
+                    sh 'docker build -t langcardgame-image .'
                 }
             }
         }
