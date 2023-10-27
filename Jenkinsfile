@@ -1,11 +1,21 @@
 pipeline {
     agent any
     stages {
-        stage('Docker Stop and Clean Previous') {
+        stage('Docker Stop Previous Container') {
             steps {
                 script {
                     try {
                         sh 'docker kill dev_langcardgame'
+                    } catch (Exception e) {
+                        echo 'Container does not exist'
+                    }
+                }
+            }
+        }
+        stage('Docker Remove Previous Container') {
+            steps {
+                script {
+                    try {
                         sh 'docker rm dev_langcardgame'
                     } catch (Exception e) {
                         echo 'Container does not exist'
@@ -13,7 +23,7 @@ pipeline {
                 }
             }
         }
-        stage('Docker Build') {
+        stage('Docker Build New Container') {
             steps {
                 script {
                     sh 'docker build -t langcardgame-image .'

@@ -16,7 +16,7 @@ const HomePage = () => {
         <div className="absolute top-0 left-0 w-full h-full bg-gray-900 bg-opacity-20 backdrop-filter backdrop-blur-lg"></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
           <h1 className="text-4xl font-bold mb-4">
-            Welcome to our CardsLang Game
+            Welcome to our CardsLang Game Bang!
           </h1>
           <p className="text-lg">
             Card language game is an exciting and educational game that helps
