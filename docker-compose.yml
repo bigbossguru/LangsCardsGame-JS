@@ -2,6 +2,7 @@ services:
   frontend:
     image: game_frontend
     container_name: game_frontend
+    restart: always
     build:
       context: .
       dockerfile: ./Dockerfile
