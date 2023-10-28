@@ -22,6 +22,7 @@ const HomePage = () => {
             Card language game is an exciting and educational game that helps
             players to learn new vocabulary in a fun and interactive way.
           </p>
+          <p>Created by Gurov Alex</p>
         </div>
       </div>
     </>
