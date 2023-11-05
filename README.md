@@ -15,3 +15,5 @@ docker run --name dev_langcardgame -p 3000:3000 -d langcardgame-image
 ```
 docker kill dev_langcardgame && docker rm dev_langcardgame
 ```
+
+this repository is bind by github webhook with jenkins pipeline
