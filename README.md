@@ -17,4 +17,3 @@ docker kill dev_langcardgame && docker rm dev_langcardgame
 ```
 
 this repository is bind by github webhook with jenkins pipeline
-hello world
